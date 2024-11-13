@@ -1,0 +1,72 @@
+/* NetflixHome.css */
+.App {
+    background-color: #111;
+    color: #fff;
+}
+
+.row {
+    margin-left: 20px;
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px 0;
+}
+
+.row__poster {
+    max-height: 150px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+.featured {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.featured__content {
+    padding: 20px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--play {
+    background-color: #e50914;
+}
+
+.btn--info {
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar__links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
